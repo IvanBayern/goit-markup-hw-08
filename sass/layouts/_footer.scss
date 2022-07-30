@@ -1,0 +1,50 @@
+.footer {
+    @include section ($p-top: 60px,$p-bottom: 60px);
+    
+    background-color: var(--bg-cl);
+
+    &__contakt {
+            margin-right: 70px;
+        }
+}
+
+
+
+address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.address__link {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--white-txt-cl);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--blu-cl);
+        }
+    &--color {
+         color: rgba(255, 255, 255, 0.6);
+         ;
+     }
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-socials__subtitle {
+    margin-bottom: 20px;
+}
+
+
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+}
+
