@@ -1,6 +1,10 @@
 .team {
-
-    @include section ();
+    @include section ($p-top: 60px, $p-bottom: 60px);
+    @media screen and (min-width: 1200px){
+        @include section ($p-top: 94px,
+                $p-bottom: 94px);
+    }
+    
     
     background-color: #F5F4FA;
 
@@ -8,6 +12,19 @@
             display: block;
             max-width: 100%;
             height: auto;
+    @media screen and (min-width: 480px) {
+            max-width: 100%;
+    
+        }
+    
+        @media screen and (min-width: 768px) {
+        max-width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 270px;
+            
+        }
         }
     &__container {
             padding-top: 30px;

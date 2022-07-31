@@ -28,7 +28,7 @@
 
 .btn__item {
     font-family: inherit;
-    ;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -62,12 +62,26 @@
 .btn:not(:last-child) {
     margin-right: 8px;
 }
-
-
+.item__btn{
+    @media screen and (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+}
 .btn__list {
+    
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    
+    @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
     justify-content: center;
-    margin-bottom: 50px;
+    
+    }
+         @media screen and (min-width: 1200px){
+            margin-bottom: 50px;
+         }
 
 }
 .footer-form__btn {
@@ -106,5 +120,21 @@
     }
 }
 
+.menu-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
 
-
+.menu-button .icon-menu {
+    display: none;
+    
+}
+.menu-button.is-open .icon-menu{
+    display: block;
+}
+.menu-button.is-open .icon-cross {
+    display: none;
+}

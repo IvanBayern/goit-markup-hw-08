@@ -18,12 +18,14 @@
     text-transform: uppercase;
     color: var(--black-txt-cl);
     margin-bottom: 10px;
+
+    @media screen and (max-width:767px) {
+            text-align: center;}
 }
 .benefits__text {
 
     @include fonts(14px, null, null, 0.03em);
-    font-size: 14px;
-    letter-spacing: 0.03em;
+    
 }
 .team__title {
 

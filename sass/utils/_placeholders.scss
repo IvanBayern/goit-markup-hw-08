@@ -10,7 +10,7 @@
         letter-spacing: $ls;
 }
 
-@mixin flex-based($items, $indent) {
+@mixin flex-based($items, $indent: 30px) {
     flex-basis: calc((100% - $indent * ($items - 1)) / $items); 
     
 }
