@@ -1,11 +1,18 @@
 .hero__title {
 
-    @include fonts(44px, 60px, 900, 0.06em );
+    @include fonts(26px, 42px, 900, 0.06em);
+
+    @media screen and (min-width: 1200px) {
+        @include fonts(44px, 60px, 900, 0.06em);
+        max-width: 696px;
+        }
+
+    
     
     text-align: center;
     text-transform: uppercase;
     color: var(--white-txt-cl);
-    max-width: 696px;
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;

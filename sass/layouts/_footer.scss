@@ -1,16 +1,25 @@
 .footer {
+   
     @include section ($p-top: 60px,$p-bottom: 60px);
     
     background-color: var(--bg-cl);
 
     &__contakt {
-            margin-right: 70px;
+       
+        @media screen and (min-width: 1200px) {
+                margin-right: 70px;
+            }
+                @media screen and (max-width: 1199px) {
+                    margin-bottom: 60px;
+                }
+           
         }
 }
 
 
 
 address {
+    
     margin-top: 20px;
     font-style: normal;
 }
@@ -35,7 +44,11 @@ address {
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
 }
 
 .footer-socials__subtitle {
@@ -44,7 +57,32 @@ address {
 
 
 .footer-flex {
-    display: flex;
-    align-items: baseline;
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+    
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+        }
+    
+}
+
+@media (min-width: 768px) {
+.footer__tablet {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    
+}
+.footer-socials{
+    @media screen and (max-width: 767px) {
+           margin-bottom: 60px;
+        }
 }
 
