@@ -34,6 +34,10 @@
     height: 4px;
     background-color: var(--blu-cl);
 
+    @media screen and (max-width: 1199px) {
+            transform: translateY(33px);
+        }
+
 
 }
 
