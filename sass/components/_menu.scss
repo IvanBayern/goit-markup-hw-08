@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+
+    .menu-container,
+    .menu-button {
+        display: none;
+    }
+}
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    height: 100vh;
+    background-color: palegoldenrod;
+
+    &.is-open {
+        display: block;
+    }
+}

@@ -90,7 +90,18 @@
 
 .modal__title {
 
-    @include fonts(20px, 23px, 700, 0.03em);
+    @media screen and (max-width: 1199px) {
+            @include fonts(20px, 30px, 700, 0.03em);
+            // width: 370px;
+            // margin-left: auto;
+            // margin-right: auto;
+        }
+    
+        @media screen and (min-width: 1200px) {
+        @include fonts(20px, 23px, 700, 0.03em);
+        }
+
+    
 
     font-family: var(--main-font);
     font-style: normal;
