@@ -1406,21 +1406,6 @@ address {
   max-width: 100%;
   height: auto;
 }
-@media screen and (min-width: 480px) {
-  .team__foto {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team__foto {
-    max-width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__foto {
-    max-width: 270px;
-  }
-}
 .team__container {
   padding-top: 30px;
   padding-bottom: 30px;
