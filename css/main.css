@@ -716,7 +716,6 @@ fieldset {
 }
 .footer-form__email {
   display: block;
-  min-width: 450px;
   height: 50px;
   padding: 0;
   padding-left: 16px;
@@ -746,6 +745,11 @@ fieldset {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-form__email {
+    min-width: 450px;
   }
 }
 

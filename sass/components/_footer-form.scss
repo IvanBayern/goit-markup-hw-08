@@ -34,9 +34,13 @@
                 margin-bottom: 20px;
         
             }
+
+                @media screen and (min-width: 480px) {
+                    min-width: 450px;
+                }
         display: block;
         // align-items: center;
-        min-width: 450px;
+       
         height: 50px;
         padding: 0;
         padding-left: 16px;
