@@ -18,16 +18,33 @@
     
     //     @media screen and (min-width:768) {
     //         @include flex-based (4);
+
+
     //     }
+ @media screen and (max-width: 767px) {
+     
+        margin-bottom: 30px;
+    
+        &:last-child{
+            margin-bottom: 0;
+        }
 }
 
+}
 
 .card-set {
     // display: flex;
     // justify-content: space-between;
+   
+    
 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            // margin-bottom: -30px ;
+        }
+    
 }
+
+ 
