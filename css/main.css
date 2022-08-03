@@ -1330,13 +1330,6 @@ address {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/hero-desktop-2x-3200-mino.jpg);
   }
 }
-.benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 @media screen and (max-width: 767px) {
   .benefits__list {
     padding-top: 60px;
@@ -1345,6 +1338,11 @@ address {
 }
 @media screen and (min-width: 768px) {
   .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 60px;
     gap: 30px;
@@ -1382,7 +1380,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -1476,13 +1474,15 @@ address {
   }
 }
 
-.client {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
+@media screen and (min-width: 480px) {
+  .client {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .client__icon {
   fill: currentColor;
@@ -1508,6 +1508,17 @@ address {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .client__item {
+    margin-bottom: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .client__item:last-child {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 480px) {
   .client__item {
