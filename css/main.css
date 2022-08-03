@@ -1266,7 +1266,7 @@ address {
 
 .hero {
   max-width: 1600px;
-  height: 400px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/mobile/hero-mobile-1x-480\ -mino.jpg);
