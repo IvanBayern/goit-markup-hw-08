@@ -994,8 +994,8 @@ fieldset {
 
 .menu-container {
   z-index: 10;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
@@ -1023,8 +1023,8 @@ fieldset {
 }
 .menu-container.is-open {
   display: block;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 @media screen and (min-width: 768px) {
   .menu-container.is-open {
