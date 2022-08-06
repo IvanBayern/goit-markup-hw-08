@@ -974,12 +974,6 @@ fieldset {
   color: var(--black-txt-cl);
 }
 
-@media (min-width: 768px) {
-  .menu-container,
-.menu-button {
-    display: none;
-  }
-}
 .menu-button {
   z-index: 20;
   position: absolute;
@@ -1022,7 +1016,6 @@ fieldset {
   }
 }
 .menu-container.is-open {
-  display: block;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
